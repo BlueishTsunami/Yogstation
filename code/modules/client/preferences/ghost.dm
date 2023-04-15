@@ -59,6 +59,7 @@
 		"ghost_green" = "Green",
 		"ghost_grey" = "Grey",
 		"ghost_mellow" = "Mellow",
+		"ghost_moth" = "Moff",
 		"ghost_pink" = "Pink",
 		"ghost_pinksherbert" = "Pink Sherbert",
 		"ghost_purpleswirl" = "Purple Swirl",
@@ -67,7 +68,6 @@
 		"ghost_yellow" = "Yellow",
 		"ghostian2" = "Ian",
 		"ghostking" = "King",
-		"ghost_moth" = "Moff",
 		"skeleghost" = "Skeleton",
 	)
 
