@@ -12,6 +12,24 @@
 	body_parts_covered = CHEST|GROIN
 	allowed = list(/obj/item/reagent_containers/spray/plantbgone, /obj/item/plant_analyzer, /obj/item/seeds, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/cultivator, /obj/item/reagent_containers/spray/pestspray, /obj/item/hatchet, /obj/item/storage/bag/plants)
 
+/obj/item/clothing/suit/rangerjacket
+	name = "park ranger jacket"
+	desc = "A jacket worn by those with a sworn oath to protect the forest."
+	icon_state = "rangerjacket"
+	item_state = "rangerjacket"
+	blood_overlay_type = "armor"
+	allowed = list(/obj/item/reagent_containers/spray/plantbgone, /obj/item/plant_analyzer, /obj/item/seeds, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/cultivator, /obj/item/reagent_containers/spray/pestspray, /obj/item/hatchet, /obj/item/storage/bag/plants, /obj/item/storage/box/fancy/cigarettes, /obj/item/lighter)
+
+//Cargo
+/obj/item/clothing/suit/cargojacket
+	name = "cargo technician jacket"
+	desc = "speedy delivery and out of this world service."
+	icon_state = "cargojacket"
+	item_state = "cargojacket"
+	blood_overlay_type = "armor"
+	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/tank/internals/ipc_coolant, /obj/item/radio, /obj/item/storage/box/fancy/cigarettes, /obj/item/lighter)
+
+
 //Captain
 /obj/item/clothing/suit/captunic
 	name = "captain's parade tunic"
@@ -116,6 +134,22 @@
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/tank/internals/ipc_coolant, /obj/item/t_scanner, /obj/item/radio, /obj/item/extinguisher/mini)
 	resistance_flags = NONE
 
+/obj/item/clothing/suit/engijacket
+	name = "construction jacket"
+	desc = "A high-visibility jacket used in work zones."
+	icon_state = "engicoat"
+	item_state = "engicoat"
+	blood_overlay_type = "armor"
+	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/tank/internals/ipc_coolant, /obj/item/t_scanner, /obj/item/radio, /obj/item/extinguisher/mini, /obj/item/storage/box/fancy/cigarettes, /obj/item/lighter)
+
+/obj/item/clothing/suit/atmosjacket
+	name = "atmospherics jacket"
+	desc = "A jacket to keep warm when you're fighting fires."
+	icon_state = "atmoscoat"
+	item_state = "atmoscoat"
+	blood_overlay_type = "armor"
+	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/tank/internals/ipc_coolant, /obj/item/t_scanner, /obj/item/radio, /obj/item/extinguisher/mini, /obj/item/storage/box/fancy/cigarettes, /obj/item/lighter)
+
 //Lawyer
 /obj/item/clothing/suit/toggle/lawyer
 	name = "blue suit jacket"
@@ -166,12 +200,45 @@
 	icon_state = "hosbluejacket"
 	item_state = "hosbluejacket"
 
-//Surgeon
+//Science
+/obj/item/clothing/suit/scijacket
+	name = "scientist jacket"
+	desc = "Peer reviewed Nanotrasen clothing research indicates that this is a jacket."
+	icon_state = "scijacket"
+	item_state = "scijacket"
+	allowed = list(/obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/autoinjector, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/pill, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic, /obj/item/toy, /obj/item/storage/box/fancy/cigarettes, /obj/item/lighter, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/tank/internals/ipc_coolant)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 0)
+
+//Medical
 /obj/item/clothing/suit/apron/surgical
 	name = "surgical apron"
 	desc = "A sterile blue surgical apron."
 	icon_state = "surgical"
 	allowed = list(/obj/item/scalpel, /obj/item/surgical_drapes, /obj/item/cautery, /obj/item/hemostat, /obj/item/retractor)
+
+/obj/item/clothing/suit/medjacket
+	name = "medical jacket"
+	desc = "A sterile jacket for operating in style."
+	icon_state = "medjacket"
+	item_state = "medjacket"
+	allowed = list(/obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/autoinjector, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/pill, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic, /obj/item/soap, /obj/item/sensor_device, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/tank/internals/ipc_coolant, /obj/item/hypospray)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 45)
+
+/obj/item/clothing/suit/chemjacket
+	name = "chemist jacket"
+	desc = "A jacket with light chemical resistance, designed for use in the lab."
+	icon_state = "chemjacket"
+	item_state = "chemjacket"
+	allowed = list(/obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/autoinjector, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/pill, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic, /obj/item/soap, /obj/item/sensor_device, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/tank/internals/ipc_coolant, /obj/item/hypospray)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 45)
+
+/obj/item/clothing/suit/virojacket
+	name = "virology jacket"
+	desc = "Why does the virologist need a jacket? Because they're commonly cold."
+	icon_state = "virojacket"
+	item_state = "virojacket"
+	allowed = list(/obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/autoinjector, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/pill, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic, /obj/item/soap, /obj/item/sensor_device, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/tank/internals/ipc_coolant, /obj/item/hypospray)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 50, RAD = 0, FIRE = 0, ACID = 0)
 
 //Curator
 /obj/item/clothing/suit/curator
